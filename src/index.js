@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// global css
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
+  // use strict
   <React.StrictMode>
     <App />
   </React.StrictMode>,
