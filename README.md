@@ -12,6 +12,7 @@
 # refs (src/components/ClassRefsChild.js   src/components/ClassRefsParent.js  )
 # List rendering (src/components/ListRendering.js)
 # importing styles (src/components/StyleComponent.js)
+# Life cycle methods (src/components/LifeCycleParent.js)
 
 
 
