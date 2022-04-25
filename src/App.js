@@ -8,6 +8,9 @@ import ParentEvent from './components/ParentEvent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ClassRefsChild from './components/ClassRefsChild';
 import ClassRefsParent from './components/ClassRefsParent';
+import ListRendering from './components/ListRendering';
+import StyleComponent from './components/StyleComponent';
+import LifeCycleParent from './components/LifeCycleParent';
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
       {/* <DestructureClass one ="one" two="two"/> */}
       {/* <ParentEvent/> */}
       {/* <ConditionalRendering /> */}
-      <ClassRefsParent />
+      {/* <ClassRefsParent /> */}
+      {/* {<ListRendering />} */}
+      {/* {<StyleComponent />} */}
+      {<LifeCycleParent />}
     </div>
   );
 }

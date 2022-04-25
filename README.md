@@ -10,5 +10,8 @@
 #    src/components/ParentEvent.js , src/components/ChildEvent.js)
 # conditional rendering  (src/components/ConditionalRendering.js)
 # refs (src/components/ClassRefsChild.js   src/components/ClassRefsParent.js  )
+# List rendering (src/components/ListRendering.js)
+# importing styles (src/components/StyleComponent.js)
+
 
 
