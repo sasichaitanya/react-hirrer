@@ -13,6 +13,7 @@ export class LifeCycleParent extends Component {
     // mounting
     static getDerivedStateFromProps(prevProps, prevState) {
         console.log('I am in parent getDerivedStateFromProps')
+        // here u need to return updated state or null
         return null
     }
 
@@ -25,7 +26,7 @@ export class LifeCycleParent extends Component {
     // updating phase
     shouldComponentUpdate() {
         console.log('I am in parent shouldComponentUpdate')
-        return false
+        return true
     }
 
     getSnapshotBeforeUpdate() {
@@ -63,14 +64,14 @@ export default LifeCycleParent
 
 
 
-// Mounting  : 
+// Mounting / initializing : 
 // constructor() => state init
 // static getDerivedStateFromProps() => no access to this, it should return updated state or null
 // render() => 
 // componentDidMount() => api calls here 
 
 
-// Updating 
+// Updating  
 // static getDerivedStateFromProps()
 // shouldComponentUpdate() => manually control update, should return true/false
 // render()
@@ -79,5 +80,5 @@ export default LifeCycleParent
 
 
 
-// Unmounting (destroying)
+// Unmounting / destroying
 // componentWillUnmount()

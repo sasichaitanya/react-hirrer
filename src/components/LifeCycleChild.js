@@ -24,7 +24,7 @@ export class LifeCycleChild extends Component {
     // updating phase
     shouldComponentUpdate() {
         console.warn('I am in child shouldComponentUpdate')
-        return false
+        return true
     }
 
     getSnapshotBeforeUpdate() {

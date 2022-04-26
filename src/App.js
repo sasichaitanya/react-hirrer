@@ -11,6 +11,10 @@ import ClassRefsParent from './components/ClassRefsParent';
 import ListRendering from './components/ListRendering';
 import StyleComponent from './components/StyleComponent';
 import LifeCycleParent from './components/LifeCycleParent';
+import MemoPureParent from './components/MemoPureParent';
+import HeroComponent from './components/HeroComponent';
+import ErrorBoundaryDemo from './components/ErrorBoundaryDemo';
+import PropsChildrenExample from './components/PropsChildrenExample';
 
 function App() {
   return (
@@ -25,7 +29,24 @@ function App() {
       {/* <ClassRefsParent /> */}
       {/* {<ListRendering />} */}
       {/* {<StyleComponent />} */}
-      {<LifeCycleParent />}
+      {/* {<LifeCycleParent />} */}
+      {/* {<MemoPureParent />} */}
+
+      {/*it is accessed as props.children in child component */}
+      {/* <PropsChildrenExample>
+        <p>helloooooooo</p>
+        <p>Hi</p>
+        <p>how</p>
+        <p>are</p>
+        <p>you</p>
+      </PropsChildrenExample> */}
+
+      <ErrorBoundaryDemo>
+        <HeroComponent name="hero" />
+      </ErrorBoundaryDemo>
+      <ErrorBoundaryDemo>
+        <HeroComponent name="joker" />
+      </ErrorBoundaryDemo>
     </div>
   );
 }

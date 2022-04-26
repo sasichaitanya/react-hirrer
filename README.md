@@ -13,6 +13,7 @@
 # List rendering (src/components/ListRendering.js)
 # importing styles (src/components/StyleComponent.js)
 # Life cycle methods (src/components/LifeCycleParent.js)
-
+# Memo and Pure component (src/components/MemoPureParent.js)
+# Error boundaries (src/components/ErrorBoundaryDemo.js)
 
 
