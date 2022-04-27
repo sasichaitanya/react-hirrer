@@ -1,4 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 // components
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
@@ -15,10 +17,12 @@ import MemoPureParent from './components/MemoPureParent';
 import HeroComponent from './components/HeroComponent';
 import ErrorBoundaryDemo from './components/ErrorBoundaryDemo';
 import PropsChildrenExample from './components/PropsChildrenExample';
+import HocDemoParent from './components/HocDemoParent';
+import FormHandling from './components/FormHandling';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>React</h1>
       {/* <FunctionalComponent name="I am functional component"/> */}
       {/* <ClassComponent name="chaitanya" locations=""/> */}
@@ -41,12 +45,14 @@ function App() {
         <p>you</p>
       </PropsChildrenExample> */}
 
-      <ErrorBoundaryDemo>
+      {/* <ErrorBoundaryDemo>
         <HeroComponent name="hero" />
       </ErrorBoundaryDemo>
       <ErrorBoundaryDemo>
         <HeroComponent name="joker" />
-      </ErrorBoundaryDemo>
+      </ErrorBoundaryDemo> */}
+      {/* <HocDemoParent /> */}
+      <FormHandling />
     </div>
   );
 }

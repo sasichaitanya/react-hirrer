@@ -7,4 +7,5 @@ function MemoComponent(props) {
     )
 }
 
+// predefined hoc
 export default React.memo(MemoComponent)

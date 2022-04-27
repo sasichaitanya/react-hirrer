@@ -15,5 +15,7 @@
 # Life cycle methods (src/components/LifeCycleParent.js)
 # Memo and Pure component (src/components/MemoPureParent.js)
 # Error boundaries (src/components/ErrorBoundaryDemo.js)
+# Custom HOC (src/components/HocDemo.js)
+# Form handling (src/components/FormHandling.js)
 
 
