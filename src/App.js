@@ -1,6 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+// context reference
+import { Provider } from './components/ContextDemo';
+
 // components
 import FunctionalComponent from './components/FunctionalComponent';
 import ClassComponent from './components/ClassComponent';
@@ -19,9 +22,11 @@ import ErrorBoundaryDemo from './components/ErrorBoundaryDemo';
 import PropsChildrenExample from './components/PropsChildrenExample';
 import HocDemoParent from './components/HocDemoParent';
 import FormHandling from './components/FormHandling';
+import ContextApiDemoA from './components/ContextApiDemoA';
 
 function App() {
   return (
+
     <div>
       <h1>React</h1>
       {/* <FunctionalComponent name="I am functional component"/> */}
@@ -52,8 +57,12 @@ function App() {
         <HeroComponent name="joker" />
       </ErrorBoundaryDemo> */}
       {/* <HocDemoParent /> */}
-      <FormHandling />
+      {/* <FormHandling /> */}
+      <Provider value="{'a': 1, 'b': 2}">
+        <ContextApiDemoA  name ="hello"/>
+      </Provider>
     </div>
+
   );
 }
 
