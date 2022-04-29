@@ -23,6 +23,8 @@ import PropsChildrenExample from './components/PropsChildrenExample';
 import HocDemoParent from './components/HocDemoParent';
 import FormHandling from './components/FormHandling';
 import ContextApiDemoA from './components/ContextApiDemoA';
+import HttpgetDemo from './components/HttpgetDemo';
+import HttppostDemo from './components/HttppostDemo';
 
 function App() {
   return (
@@ -58,9 +60,11 @@ function App() {
       </ErrorBoundaryDemo> */}
       {/* <HocDemoParent /> */}
       {/* <FormHandling /> */}
-      <Provider value="{'a': 1, 'b': 2}">
+      {/* <Provider value="{'a': 1, 'b': 2}">
         <ContextApiDemoA  name ="hello"/>
-      </Provider>
+      </Provider> */}
+      {/* <HttpgetDemo /> */}
+      <HttppostDemo/>
     </div>
 
   );

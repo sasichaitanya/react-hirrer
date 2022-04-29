@@ -11,7 +11,7 @@ class ClassComponent extends Component {
     }
 
     // increment = () => {
-    //     // for immediate update, need to give as arrow function
+    //     // for immediate update, need to give as arrow callback 
     //     this.setState((prevState) => {
     //         return {
     //             count: prevState.count + 1 
@@ -35,6 +35,36 @@ class ClassComponent extends Component {
         this.setState({
             name:  "name changed"
         })
+        // this.setState({
+        //     name:  "name changed1"
+        // })
+        // this.setState({
+        //     name:  "name changed2"
+        // })
+        // this.setState({
+        //     name:  "name changed3"
+        // })
+        // this.setState({
+        //     name:  "name changed4"
+        // })
+        // this.setState((prevState) => {
+        //     return {
+        //         ...prevState,
+        //         name:  "name changed"
+        //     }
+        // })
+        // this.setState((prevState) => {
+        //     return {
+        //         ...prevState,
+        //         name:  "name changed1"
+        //     }
+        // })
+        // this.setState((prevState) => {
+        //     return {
+        //         ...prevState,
+        //         name:  "name changed2"
+        //     }
+        // })
     }
 
     render() {

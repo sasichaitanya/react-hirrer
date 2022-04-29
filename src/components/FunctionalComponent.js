@@ -1,5 +1,5 @@
 // functional component
-function FunctionalComponent(props) {
+function FunctionalComponent({name}) {
 
   const buttonClick = () => {
     alert('i am working')
@@ -8,7 +8,7 @@ function FunctionalComponent(props) {
   return (
     // the below tag is not added to dom
     <>
-      <div>{props.name}</div>
+      <div>{name}</div>
       <button onClick={() => buttonClick()}>Click me</button>
     </>
   )

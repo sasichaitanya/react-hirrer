@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export class ClassRefsChild extends Component {
     constructor(props) {
         super(props)
+        // creating a reference for an element 
         this.inputRef = React.createRef()
         this.headingRef = React.createRef()
     }
