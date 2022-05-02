@@ -25,6 +25,8 @@ import FormHandling from './components/FormHandling';
 import ContextApiDemoA from './components/ContextApiDemoA';
 import HttpgetDemo from './components/HttpgetDemo';
 import HttppostDemo from './components/HttppostDemo';
+// hooks
+import UseStateDemo from './components/hooks/UseStateDemo';
 
 function App() {
   return (
@@ -64,7 +66,8 @@ function App() {
         <ContextApiDemoA  name ="hello"/>
       </Provider> */}
       {/* <HttpgetDemo /> */}
-      <HttppostDemo/>
+      {/* <HttppostDemo/> */}
+      <UseStateDemo />
     </div>
 
   );

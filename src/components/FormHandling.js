@@ -39,7 +39,7 @@ export class FormHandling extends Component {
                             <Form onSubmit={(e) => this.handleSubmit(e)}>
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
                                     <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" onChange={(e) => this.handleEmailChange(e)} placeholder="Enter email" />
+                                    <Form.Control type="email" name="email" onChange={(e) => this.handleEmailChange(e)} placeholder="Enter email" />
                                     <Form.Text className="text-muted">
                                         We'll never share your email with anyone else.
                                     </Form.Text>
@@ -47,7 +47,7 @@ export class FormHandling extends Component {
 
                                 <Form.Group className="mb-3" controlId="formBasicPassword">
                                     <Form.Label>Password</Form.Label>
-                                    <Form.Control type="password" onChange={(e) => this.handlePasswordChange(e)} placeholder="Password" />
+                                    <Form.Control type="password" name="password" onChange={(e) => this.handlePasswordChange(e)} placeholder="Password" />
                                 </Form.Group>
 
                                 <Button variant="primary" type="submit" onClick={(e) => this.handleSubmit(e)}>
