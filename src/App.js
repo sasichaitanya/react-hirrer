@@ -27,6 +27,9 @@ import HttpgetDemo from './components/HttpgetDemo';
 import HttppostDemo from './components/HttppostDemo';
 // hooks
 import UseStateDemo from './components/hooks/UseStateDemo';
+import UseEffectDemo from './components/hooks/UseEffectDemo';
+import UseRefDemo from './components/hooks/UseRefDemo';
+import UseStateDemoForm from './components/hooks/UseStateDemoForm';
 
 function App() {
   return (
@@ -67,7 +70,10 @@ function App() {
       </Provider> */}
       {/* <HttpgetDemo /> */}
       {/* <HttppostDemo/> */}
-      <UseStateDemo />
+      {/* <UseStateDemo /> */}
+      {/* <UseEffectDemo /> */}
+      {/* <UseRefDemo /> */}
+      <UseStateDemoForm/>
     </div>
 
   );
