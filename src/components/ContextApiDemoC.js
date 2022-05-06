@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Consumer } from './ContextDemo';
+import { ContextConsumer } from './ContextDemo';
 
 export class ContextApiDemoC extends Component {
   constructor(props) {
@@ -10,13 +10,13 @@ export class ContextApiDemoC extends Component {
       <>
         <h>ContextApiDemoC</h>
         <p>Variable came through props drilling is : {this.props.name}</p>
-        <Consumer>
+        <ContextConsumer>
           {
             (user) => {
               return <p>{JSON.stringify(user)}</p>
             }
           }
-        </Consumer>
+        </ContextConsumer>
       </>
     )
   }

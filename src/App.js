@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+// realted to redux
+import { Provider } from 'react-redux';
+import store from './components/redux/store/store';
 
 // context reference
-import { Provider } from './components/ContextDemo';
+import { ContextProvider } from './components/ContextDemo';
 
 // components
 import FunctionalComponent from './components/FunctionalComponent';
@@ -30,6 +33,8 @@ import UseStateDemo from './components/hooks/UseStateDemo';
 import UseEffectDemo from './components/hooks/UseEffectDemo';
 import UseRefDemo from './components/hooks/UseRefDemo';
 import UseStateDemoForm from './components/hooks/UseStateDemoForm';
+// redux  components
+import UserContainer from './components/redux/components/UserContainer';
 
 function App() {
   return (
@@ -73,8 +78,18 @@ function App() {
       {/* <UseStateDemo /> */}
       {/* <UseEffectDemo /> */}
       {/* <UseRefDemo /> */}
-      <UseStateDemoForm/>
+      {/* <UseStateDemoForm/> */}
+
+      {/* realetd to redux */}
+      <Provider store={store}>
+        <div className="App">
+          <UserContainer />
+        </div>
+      </Provider>
     </div>
+
+
+
 
   );
 }

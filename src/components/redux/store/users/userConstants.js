@@ -1,0 +1,1 @@
+export const ALERT_ACTION = "ALERT_ACTION"

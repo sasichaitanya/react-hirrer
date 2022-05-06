@@ -1,5 +1,5 @@
 import React from 'react'
-import { Consumer } from './ContextDemo';
+import { ContextConsumer } from './ContextDemo';
 
 
 import ContextApiDemoC from './ContextApiDemoC'
@@ -8,13 +8,13 @@ function ContextApiDemoB(props) {
   return (
     <div>
       <p>ContextApiDemoB</p>
-      <Consumer>
+      <ContextConsumer>
         {
           (user) => {
             return <p>{JSON.stringify(user)}</p>
           }
         }
-      </Consumer>
+      </ContextConsumer>
       <ContextApiDemoC name ={props.name}/>
     </div>
   )
