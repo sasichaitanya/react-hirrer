@@ -1,1 +1,3 @@
 export const ALERT_ACTION = "ALERT_ACTION"
+export const INCREMENT_ACTION = "INCREMENT_ACTION"
+export const CHANGE_NAME = "CHANGE_NAME"
