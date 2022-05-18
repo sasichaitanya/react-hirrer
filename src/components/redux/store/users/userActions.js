@@ -1,4 +1,4 @@
-import { ALERT_ACTION, INCREMENT_ACTION , CHANGE_NAME} from './userConstants'
+import { ALERT_ACTION, INCREMENT_ACTION ,DECREMENT_ACTION,  CHANGE_NAME} from './userConstants'
 
 export const callAlert = () => {
     return {
@@ -16,6 +16,13 @@ export const changeName = (newName) => {
 export const increment = (val) => {
     return {
         type: INCREMENT_ACTION,
+        payload: val
+    }
+}
+
+export const decrement = (val) => {
+    return {
+        type: DECREMENT_ACTION,
         payload: val
     }
 }

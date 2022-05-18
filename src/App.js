@@ -35,6 +35,7 @@ import UseRefDemo from './components/hooks/UseRefDemo';
 import UseStateDemoForm from './components/hooks/UseStateDemoForm';
 // redux  components
 import UserContainer from './components/redux/components/UserContainer';
+import UserContainer2 from './components/redux/components/UserContainer2';
 
 function App() {
   return (
@@ -84,6 +85,8 @@ function App() {
       <Provider store={store}>
         <div className="App">
           <UserContainer />
+          <hr/>
+          <UserContainer2/>
         </div>
       </Provider>
     </div>
