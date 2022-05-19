@@ -1,20 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux';
 // 
-import { callAlert , changeName, increment, decrement} from '../store/users/userActions';
+import { callAlert, changeName, increment, decrement } from '../store/users/userActions';
 
 
 function UserContainer(props) {
+    let [newUsername, setNewUsername] = useState('')
+
     return (
         <>
             <div>
                 <p>Username <b>{props.user.userName}</b></p>
+                <input value={newUsername} placeholder="enter new username" 
+                onChange={(e) => setNewUsername(e.target.value)} />
+                <br />
+                <button onClick={() => props.changeName(newUsername)}>Change Name variable in store</button>
                 <p>Count is :  <b>{props.user.count}</b></p>
                 <button onClick={props.increment}>Increment state variable 'Count'</button>
                 <button onClick={props.decrement}>Decrement state variable 'Count'</button>
-                <br/>
-                <button onClick={props.changeName}>Change Name variable in store</button>
-                <br/>
+
+                <br />
                 <button onClick={props.callAlert}>Click to alert</button>
             </div>
         </>
@@ -41,7 +46,7 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         callAlert: () => dispatch(callAlert()),
-        changeName: () => dispatch(changeName('suresh')),
+        changeName: (name) => dispatch(changeName(name)),
         increment: () => dispatch(increment(1)),
         decrement: () => dispatch(decrement(2))
     }
