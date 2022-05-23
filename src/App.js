@@ -37,6 +37,7 @@ import UseStateDemoForm from './components/hooks/UseStateDemoForm';
 import UserContainer from './components/redux/components/UserContainer';
 import UserContainer2 from './components/redux/components/UserContainer2';
 import UserContainer3 from './components/redux/components/UserContainerHooks';
+import UserContainerApiData from './components/redux/components/UserContainerApiData';
 
 function App() {
   return (
@@ -72,9 +73,9 @@ function App() {
       </ErrorBoundaryDemo> */}
       {/* <HocDemoParent /> */}
       {/* <FormHandling /> */}
-      {/* <Provider value="{'a': 1, 'b': 2}">
+      {/* <ContextProvider value="{'a': 1, 'b': 2}">
         <ContextApiDemoA  name ="hello"/>
-      </Provider> */}
+      </ContextProvider> */}
       {/* <HttpgetDemo /> */}
       {/* <HttppostDemo/> */}
       {/* <UseStateDemo /> */}
@@ -90,6 +91,8 @@ function App() {
           <UserContainer2 />
           <hr />
           <UserContainer3 />
+          <hr />
+          <UserContainerApiData/>
         </div>
       </Provider>
     </div>
