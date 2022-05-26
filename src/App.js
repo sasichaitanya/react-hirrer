@@ -1,48 +1,52 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 // realted to redux
-import { Provider } from 'react-redux';
-import store from './components/redux/store/store';
+import { Provider } from "react-redux";
+import store from "./components/redux/store/store";
 
 // context reference
-import { ContextProvider } from './components/ContextDemo';
+import { ContextProvider } from "./components/ContextDemo";
 
 // components
-import FunctionalComponent from './components/FunctionalComponent';
-import ClassComponent from './components/ClassComponent';
-import DestructureFunctional from './components/DestructureFunctional';
-import DestructureClass from './components/DestructureClass';
-import ParentEvent from './components/ParentEvent';
-import ConditionalRendering from './components/ConditionalRendering';
-import ClassRefsChild from './components/ClassRefsChild';
-import ClassRefsParent from './components/ClassRefsParent';
-import ListRendering from './components/ListRendering';
-import StyleComponent from './components/StyleComponent';
-import LifeCycleParent from './components/LifeCycleParent';
-import MemoPureParent from './components/MemoPureParent';
-import HeroComponent from './components/HeroComponent';
-import ErrorBoundaryDemo from './components/ErrorBoundaryDemo';
-import PropsChildrenExample from './components/PropsChildrenExample';
-import HocDemoParent from './components/HocDemoParent';
-import FormHandling from './components/FormHandling';
-import ContextApiDemoA from './components/ContextApiDemoA';
-import HttpgetDemo from './components/HttpgetDemo';
-import HttppostDemo from './components/HttppostDemo';
+import FunctionalComponent from "./components/FunctionalComponent";
+import ClassComponent from "./components/ClassComponent";
+import DestructureFunctional from "./components/DestructureFunctional";
+import DestructureClass from "./components/DestructureClass";
+import ParentEvent from "./components/ParentEvent";
+import ConditionalRendering from "./components/ConditionalRendering";
+import ClassRefsChild from "./components/ClassRefsChild";
+import ClassRefsParent from "./components/ClassRefsParent";
+import ListRendering from "./components/ListRendering";
+import StyleComponent from "./components/StyleComponent";
+import LifeCycleParent from "./components/LifeCycleParent";
+import MemoPureParent from "./components/MemoPureParent";
+import HeroComponent from "./components/HeroComponent";
+import ErrorBoundaryDemo from "./components/ErrorBoundaryDemo";
+import PropsChildrenExample from "./components/PropsChildrenExample";
+import HocDemoParent from "./components/HocDemoParent";
+import FormHandling from "./components/FormHandling";
+import ContextApiDemoA from "./components/ContextApiDemoA";
+import HttpgetDemo from "./components/HttpgetDemo";
+import HttppostDemo from "./components/HttppostDemo";
 // hooks
-import UseStateDemo from './components/hooks/UseStateDemo';
-import UseEffectDemo from './components/hooks/UseEffectDemo';
-import UseRefDemo from './components/hooks/UseRefDemo';
-import UseStateDemoForm from './components/hooks/UseStateDemoForm';
+import UseStateDemo from "./components/hooks/UseStateDemo";
+import UseEffectDemo from "./components/hooks/UseEffectDemo";
+import UseRefDemo from "./components/hooks/UseRefDemo";
+import UseStateDemoForm from "./components/hooks/UseStateDemoForm";
+import UseMemoDemo from "./components/hooks/UseMemoDemo";
 // redux  components
-import UserContainer from './components/redux/components/UserContainer';
-import UserContainer2 from './components/redux/components/UserContainer2';
-import UserContainer3 from './components/redux/components/UserContainerHooks';
-import UserContainerApiData from './components/redux/components/UserContainerApiData';
+import UserContainer from "./components/redux/components/UserContainer";
+import UserContainer2 from "./components/redux/components/UserContainer2";
+import UserContainer3 from "./components/redux/components/UserContainerHooks";
+import UserContainerApiData from "./components/redux/components/UserContainerApiData";
+import ParentForUseCallback from "./components/hooks/UseCallback-Hook/ParentForUseCallback";
+import TitleForUseCallback from "./components/hooks/UseCallback-Hook/TitleForUseCallback";
+import ButtonForUseCallback from "./components/hooks/UseCallback-Hook/ButtonForUseCallback";
+import CountForUseCallback from "./components/hooks/UseCallback-Hook/CountForUseCallback";
 
 function App() {
   return (
-
-    <div>
+    <div className="App">
       <h1>React</h1>
       {/* <FunctionalComponent name="I am functional component"/> */}
       {/* <ClassComponent name="chaitanya" locations=""/> */}
@@ -82,9 +86,11 @@ function App() {
       {/* <UseEffectDemo /> */}
       {/* <UseRefDemo /> */}
       {/* <UseStateDemoForm/> */}
+      <UseMemoDemo />
+      {/* <ParentForUseCallback /> */}
 
-      {/* realetd to redux */}
-      <Provider store={store}>
+      {/* realated to redux */}
+      {/* <Provider store={store}>
         <div className="App">
           <UserContainer />
           <hr />
@@ -94,15 +100,10 @@ function App() {
           <hr />
           <UserContainerApiData/>
         </div>
-      </Provider>
+      </Provider> */}
     </div>
-
-
-
-
   );
 }
-
 
 export default App;
 
