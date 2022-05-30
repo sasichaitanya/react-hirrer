@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ButtonForUseCallback({ handleClick , children }) {
-    console.log('Rendering button - ', children)
+function ButtonForUseCallback({ handleClick, children }) {
+  console.log('Rendering button - ', children)
   return (
     <div>
       <button onClick={handleClick}>
-          {children}
+        {children}
       </button>
     </div>
   )

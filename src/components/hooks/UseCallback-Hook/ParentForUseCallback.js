@@ -17,10 +17,12 @@ function ParentForUseCallback() {
   return (
     <div className="App">
       <TitleForUseCallback />
+      <hr />
       <CountForUseCallback text="Age" count={age} />
       <ButtonForUseCallback handleClick={incrementAge}>
         Increment Age
       </ButtonForUseCallback>
+      <hr />
       <CountForUseCallback text="Salary" count={salary} />
       <ButtonForUseCallback handleClick={incrementSalary}>
         Increment Salary
